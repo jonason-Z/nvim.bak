@@ -17,3 +17,10 @@ vim.api.nvim_create_autocmd("VimEnter", {
   end,
   once = true,
 })
+-- -- magma-nvim 检测到python文件就开启magma-nvim
+-- vim.api.nvim_create_autocmd("FileType", {
+--   pattern = "python",
+--   callback = function()
+--     require("lazy").load({ plugins = { "magma-nvim" } })
+--   end,
+-- })
